@@ -26,10 +26,20 @@ public class DZ2 {
         int number3 = array[0] * array[1];
         System.out.println(number3);
 
-        int number4 = (int) Math.pow(array[1], array[0]);
-        String number4_1 = Integer.toString(array[1]);
-        String number4_2 = Integer.toString(array[0]);
-        String number4_3 = Integer.toString(number4);
+        String number4_1;
+        String number4_2;
+        String number4_3;
+        if (array[1] == 0 && array[0] == 0){
+            number4_1 = "0";
+            number4_2 = "0";
+            number4_3 = "0";
+        }
+        else{
+            int number4 = (int) Math.pow(array[1], array[0]);
+            number4_1 = Integer.toString(array[1]);
+            number4_2 = Integer.toString(array[0]);
+            number4_3 = Integer.toString(number4);
+        }
         System.out.println(number4_3);
 
         FileWriter fw = new FileWriter("file.txt", false);
