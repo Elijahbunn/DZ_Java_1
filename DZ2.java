@@ -26,9 +26,9 @@ public class DZ2 {
         int number3 = array[0] * array[1];
         System.out.println(number3);
 
-        int number4 = (int) Math.pow(array[0], array[1]);
-        String number4_1 = Integer.toString(array[0]);
-        String number4_2 = Integer.toString(array[1]);
+        int number4 = (int) Math.pow(array[1], array[0]);
+        String number4_1 = Integer.toString(array[1]);
+        String number4_2 = Integer.toString(array[0]);
         String number4_3 = Integer.toString(number4);
         System.out.println(number4_3);
 
